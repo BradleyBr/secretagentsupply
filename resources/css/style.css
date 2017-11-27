@@ -5,6 +5,7 @@ header {
   background-color: black;
 }
 
+
 .headercontainer {
   max-width: 960px;
   margin: 0 auto;
@@ -44,7 +45,7 @@ header h3 {
 
 .fontbox {
   position: relative;
-  width: 960px;
+  max-width: 960px;
   top: 9rem;
   margin-left: auto;
   margin-right: auto;
@@ -79,9 +80,13 @@ header h3 {
   background-color: firebrick;
 }
 
+.smallerscreen {
+    display: none;
+}
+
 nav {
   display: flex;
-  width: 960px;
+  max-width: 960px;
   margin: 0 auto;
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
@@ -97,7 +102,7 @@ nav span {
 }
 
 .productcontainer {
-  width: 960px;
+  max-width: 960px;
   margin: 0 auto;
 }
 .products {
@@ -105,9 +110,10 @@ nav span {
   justify-content: space-between;
   margin-top: 3rem;
 }
-.product {
+.productpen, .productwatch, .productglasses {
   width: 30%;
   border: 4px solid black;
+  min-width: 0;
 }
 
 .productimage {
@@ -116,7 +122,8 @@ nav span {
   align-items: center;
   height: 9rem;
 }
-.product img {
+
+.productpen img, .productwatch img, .productglasses img {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -125,7 +132,7 @@ nav span {
   max-width: 8rem;
 }
 
-.product h3 {
+.productpen h3, .productwatch h3, .productglasses h3{
   text-align: center;
   color: white;
   background-color: black;
@@ -135,8 +142,9 @@ nav span {
   font-size: 1rem;
 }
 
+
 .timeandplace {
-  width: 960px;
+  max-width: 960px;
   margin-top: 3rem;
   margin-right: auto;
   margin-left: auto;
@@ -147,13 +155,11 @@ nav span {
   margin-top: 3rem;
   justify-content: space-between;
 }
-.hours {
+.hours, .location {
   width: 35%;
 }
 
-.location {
-  width: 35%;
-}
+
 
 .location h3 {
   background-color: black;
@@ -195,4 +201,84 @@ footer p {
   color: white;
   font-family: Helvetica;
   font-size: 1rem;
+}
+
+@media only screen and (max-width: 1024px) {
+
+  header img {
+    height: 1.25rem;
+  }
+
+  header h3 {
+    font-size: 0.8rem;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .smallerscreen {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .productglasses {
+    display: none;
+  }
+
+  .productpen, .productwatch {
+    width: 47%;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+
+  .newarrival {
+    height: 15rem;
+  }
+
+  .fontbox {
+  top: 10rem;
+  }
+
+  .arrivalfont h2 {
+    font-size: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 2rem;
+  }
+
+  .arrivalfont h3 {
+    font-size: 0.77rem;
+    padding-top: 1rem;
+    padding-left: 2rem;
+  }
+
+  .products {
+    justify-content: center;
+  }
+
+  .productwatch {
+    display: none;
+  }
+
+  .productpen {
+    width: 90%;
+  }
+
+  .timeplacechild {
+    flex-direction: column;
+  }
+
+  .hours, .location {
+    width: 90%;
+  }
+
+  .location {
+    margin-bottom: 0.5rem;
+  }
+
+  .footercontainer {
+    justify-content: center;
+  }
 }
