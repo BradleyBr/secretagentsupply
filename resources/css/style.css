@@ -1,56 +1,198 @@
+html {
+  font-size: 18px;
+}
 header {
   background-color: black;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+}
+
+.headercontainer {
+  max-width: 960px;
+  margin: 0 auto;
+  height: 2.32rem;
 }
 
 header img {
   display: inline-block;
-  margin-left: 25%;
   height: 1.5rem;
-  padding: 0;
+  margin-left: 0.5rem;
+  margin-right:0.5rem;
+  padding-top: 0.66rem;
+
 }
 header h3 {
   display: inline-block;
   position: relative;
   bottom: 0.5rem;
+  padding-bottom: 0.66rem;
   color: white;
-  margin-left: 0.5rem;
+  font-family: Helvetica;
+  font-size: 1rem;
+  margin-left:0.5rem;
 }
 
-h2 {
-  font-size: 2rem;
-}
 
-h3 {
-  opacity: 0.8;
-  font-size: 0.9rem;
-}
 
 .newarrival {
   background-image: url("../images/moto.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 400px;
+  height: 25rem;
+  margin: 0 auto;
 
 
+}
+
+.fontbox {
+  position: relative;
+  width: 960px;
+  top: 9rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .arrivalfont {
   display: block;
-  position: relative;
-    top: 50%;
-    width: 25%;
-    height: 25%;
-    left: 25%;
-    background-color: black;
+  width: 20rem;
+  background-color: black;
 }
 
 .arrivalfont h2 {
+  padding-top: 0.25rem;
+  padding-left: 3rem;
+  padding-bottom: 2rem;
+  font-family: Helvetica;
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+}
+
+.arrivalfont h3 {
+  padding-top: 2rem;
+  padding-left: 3rem;
+  font-family: Helvetica;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+}
+
+.nav {
+  background-color: firebrick;
+}
+
+nav {
+  display: flex;
+  width: 960px;
+  margin: 0 auto;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  justify-content: space-between;
+}
+
+nav span {
+  display: flex;
+  font-family: Helvetica;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+}
+
+.productcontainer {
+  width: 960px;
+  margin: 0 auto;
+}
+.products {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3rem;
+}
+.product {
+  width: 30%;
+  border: 4px solid black;
+}
+
+.productimage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 9rem;
+}
+.product img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  max-width: 8rem;
+}
+
+.product h3 {
+  text-align: center;
+  color: white;
+  background-color: black;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  font-family: Helvetica;
+  font-size: 1rem;
+}
+
+.timeandplace {
+  width: 960px;
+  margin-top: 3rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.timeplacechild {
+  display: flex;
+  margin-top: 3rem;
+  justify-content: space-between;
+}
+.hours {
+  width: 35%;
+}
+
+.location {
+  width: 35%;
+}
+
+.location h3 {
+  background-color: black;
+  color: white;
+  padding-left: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-family: Helvetica;
+  font-size: 1rem;
+}
+
+.hours h3 {
+  background-color: black;
+  color: white;
+  padding-left: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-family: Helvetica;
+  font-size: 1rem;
+}
+
+footer {
+  display: flex;
+  height: 5rem;
+  width: 100%;
+  margin: 4rem 0 0 0;
+  background-color: black;
+}
+
+.footercontainer {
+  display: flex;
+  align-items: center;
+  width: 960px;
+  margin: 0 auto;
 
 }
-.arrivalfont h2, .arrivalfont h3 {
+
+footer p {
   color: white;
-
-
+  font-family: Helvetica;
+  font-size: 1rem;
 }
